@@ -1,0 +1,10 @@
+<map id="top.TOPTWSolution.equals" name="top.TOPTWSolution.equals">
+<area shape="rect" id="Node000001" title="Compara dos soluciones por sus enlaces de predecesores." alt="" coords="5,31,183,56"/>
+<area shape="rect" id="Node000002" href="$classtop_1_1TOPTWSolution.html#a45192e5d12a12ec58030397041b4a369" title="Crea una solución vacía para un problema." alt="" coords="231,31,464,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,41,218,43,212,44,183,46"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="306,29,299,22,304,12,320,6,347,4,378,7,394,17,389,16,376,12,347,9,321,11,307,16,304,21,312,31"/>
+<area shape="rect" id="Node000003" href="$classtop_1_1TOPTW.html#a98907c6bbeba9aba86727ecad5058261" title="Devuelve el número de puntos de interés." alt="" coords="522,5,662,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="464,29,509,27,504,27,465,34"/>
+<area shape="rect" id="Node000004" href="$classtop_1_1TOPTW.html#abfba541876921de9ec5a63373c056446" title="Devuelve el número de vehículos (rutas) disponibles." alt="" coords="512,55,672,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="465,52,499,58,494,58,464,58"/>
+</map>

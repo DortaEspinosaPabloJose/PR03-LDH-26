@@ -1,0 +1,1564 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Portal técnico del Recomendador Turístico con Ventanas de Tiempo">
+      
+      
+        <meta name="author" content="Equipo de desarrollo">
+      
+      
+      
+        <link rel="prev" href="../manual-usuario/">
+      
+      
+        <link rel="next" href="../referencia-api/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Guía técnica - RTVRPTW - Documentación Técnica</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guia-tecnica" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="RTVRPTW - Documentación Técnica" class="md-header__button md-logo" aria-label="RTVRPTW - Documentación Técnica" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RTVRPTW - Documentación Técnica
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guía técnica
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../introduccion/" class="md-tabs__link">
+          
+  
+  
+  Proyecto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../manual-usuario/" class="md-tabs__link">
+          
+  
+  
+  Manuales
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../referencia-api/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Referencia del código
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="RTVRPTW - Documentación Técnica" class="md-nav__button md-logo" aria-label="RTVRPTW - Documentación Técnica" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    RTVRPTW - Documentación Técnica
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyecto
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Proyecto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arquitectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../instalacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instalación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manuales
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Manuales
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual-usuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manual de usuario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía técnica
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía técnica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modelo-del-problema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modelo del problema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modelo del problema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#elementos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elementos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indexacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indexación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distancia-y-tiempo-de-viaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distancia y tiempo de viaje
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcion-objetivo-y-restricciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Función objetivo y restricciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formato-de-las-instancias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formato de las instancias
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algoritmo-grasp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Algoritmo GRASP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Algoritmo GRASP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esquema-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Esquema general
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#construccion-voraz-aleatorizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Construcción voraz aleatorizada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#candidatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Candidatos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprobacion-de-factibilidad-de-una-insercion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comprobación de factibilidad de una inserción
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metodos-de-seleccion-en-la-rcl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Métodos de selección en la RCL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parámetros
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informes-de-solucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Informes de solución
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utilidades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complejidad-y-rendimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Complejidad y rendimiento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitaciones-conocidas-y-trabajo-futuro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limitaciones conocidas y trabajo futuro
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convenciones-de-documentacion-del-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convenciones de documentación del código
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../referencia-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referencia del código
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modelo-del-problema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modelo del problema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modelo del problema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#elementos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elementos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indexacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indexación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distancia-y-tiempo-de-viaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distancia y tiempo de viaje
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcion-objetivo-y-restricciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Función objetivo y restricciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formato-de-las-instancias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formato de las instancias
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algoritmo-grasp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Algoritmo GRASP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Algoritmo GRASP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esquema-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Esquema general
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#construccion-voraz-aleatorizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Construcción voraz aleatorizada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#candidatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Candidatos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprobacion-de-factibilidad-de-una-insercion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comprobación de factibilidad de una inserción
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metodos-de-seleccion-en-la-rcl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Métodos de selección en la RCL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parámetros
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informes-de-solucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Informes de solución
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utilidades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complejidad-y-rendimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Complejidad y rendimiento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitaciones-conocidas-y-trabajo-futuro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limitaciones conocidas y trabajo futuro
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convenciones-de-documentacion-del-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convenciones de documentación del código
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="guia-tecnica">Guía técnica<a class="headerlink" href="#guia-tecnica" title="Permanent link">&para;</a></h1>
+<p>Esta guía describe los aspectos técnicos del proyecto,
+su estructura interna, sus componentes y su funcionamiento.</p>
+<p>Para consultar las clases y métodos se dispone
+de la referencia Doxygen.</p>
+<h2 id="modelo-del-problema">Modelo del problema<a class="headerlink" href="#modelo-del-problema" title="Permanent link">&para;</a></h2>
+<h3 id="elementos">Elementos<a class="headerlink" href="#elementos" title="Permanent link">&para;</a></h3>
+<p>Una instancia del TOPTW (clase <code>TOPTW</code>) contiene:</p>
+<table>
+<thead>
+<tr>
+<th>Dato</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>nodes</code></td>
+<td>Número de POIs, sin contar el depósito</td>
+</tr>
+<tr>
+<td><code>x</code>, <code>y</code></td>
+<td>Coordenadas de cada nodo</td>
+</tr>
+<tr>
+<td><code>score</code></td>
+<td>Puntuación (interés) de cada nodo</td>
+</tr>
+<tr>
+<td><code>readyTime</code>, <code>dueTime</code></td>
+<td>Apertura y cierre de la ventana de tiempo de cada nodo</td>
+</tr>
+<tr>
+<td><code>serviceTime</code></td>
+<td>Duración de la visita a cada nodo</td>
+</tr>
+<tr>
+<td><code>vehicles</code></td>
+<td>Número de vehículos (rutas) disponibles</td>
+</tr>
+<tr>
+<td><code>maxTimePerRoute</code></td>
+<td>Duración máxima de una ruta (cierre de la ventana de tiempo del depósito)</td>
+</tr>
+<tr>
+<td><code>distanceMatrix</code></td>
+<td>Matriz simétrica de distancias euclídeas</td>
+</tr>
+</tbody>
+</table>
+<h3 id="indexacion">Indexación<a class="headerlink" href="#indexacion" title="Permanent link">&para;</a></h3>
+<ul>
+<li>El nodo <code>0</code> es el depósito; los nodos <code>1..nodes</code> son los POIs.</li>
+<li>Los vectores tienen tamaño <code>nodes + 1</code>.</li>
+<li>Los identificadores <strong>mayores que <code>nodes</code></strong> son copias del depósito, una por ruta adicional, y
+  se traducen al nodo <code>0</code> en todas las consultas.</li>
+</ul>
+<h3 id="distancia-y-tiempo-de-viaje">Distancia y tiempo de viaje<a class="headerlink" href="#distancia-y-tiempo-de-viaje" title="Permanent link">&para;</a></h3>
+<p>La distancia es euclídea y el tiempo de viaje es igual a la distancia (velocidad unitaria):</p>
+<div class="highlight"><pre><span></span><code>d(i, j) = raíz( (x_i - x_j)^2 + (y_i - y_j)^2 )
+</code></pre></div>
+<h3 id="funcion-objetivo-y-restricciones">Función objetivo y restricciones<a class="headerlink" href="#funcion-objetivo-y-restricciones" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Objetivo:</strong> maximizar la suma de las puntuaciones de los POIs incluidos en las rutas
+  (<code>TOPTWSolution.evaluateFitness()</code>).</li>
+<li><strong>Cada POI se visita como máximo una vez</strong>, en una sola ruta.</li>
+<li><strong>Ventanas de tiempo:</strong> la llegada a un POI debe ser anterior a su cierre. Si se llega antes de
+  la apertura, se espera.</li>
+<li><strong>Tiempo máximo:</strong> ningún instante de una ruta, incluido el regreso al depósito, puede superar
+  <code>maxTimePerRoute</code>.</li>
+<li><strong>Número de rutas:</strong> no se pueden crear más rutas que vehículos.</li>
+</ul>
+<h2 id="formato-de-las-instancias">Formato de las instancias<a class="headerlink" href="#formato-de-las-instancias" title="Permanent link">&para;</a></h2>
+<p><code>TOPTWReader.readProblem()</code> interpreta ficheros de texto en los que los campos se separan por
+espacios o tabuladores (se normalizan con <code>ExpositoUtilities.simplifyString()</code>).</p>
+<ol>
+<li><strong>Primera línea:</strong> cabecera. El campo de índice 1 es el número de vehículos y el de índice 2 el
+   número de POIs.</li>
+<li><strong>Segunda línea:</strong> se descarta.</li>
+<li><strong><code>nodes + 1</code> líneas siguientes:</strong> una por nodo, comenzando por el depósito.</li>
+</ol>
+<p>Columnas de cada línea de nodo (índice de campo, empezando en 0):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Campo</th>
+<th>Contenido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td>Coordenada X</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>Coordenada Y</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td>Tiempo de servicio</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td>Puntuación</td>
+</tr>
+<tr>
+<td style="text-align: center;">7 y 8</td>
+<td>Apertura y cierre de la ventana (<strong>sólo en el depósito</strong>)</td>
+</tr>
+<tr>
+<td style="text-align: center;">8 y 9</td>
+<td>Apertura y cierre de la ventana (resto de nodos)</td>
+</tr>
+</tbody>
+</table>
+<p>Tras la lectura se calcula la matriz de distancias y se fija <code>maxTimePerRoute</code> igual al cierre
+de la ventana del depósito.</p>
+<h2 id="algoritmo-grasp">Algoritmo GRASP<a class="headerlink" href="#algoritmo-grasp" title="Permanent link">&para;</a></h2>
+<h3 id="esquema-general">Esquema general<a class="headerlink" href="#esquema-general" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>procedimiento GRASP(maxIteraciones, tamañoRCL)
+    para k = 1 .. maxIteraciones
+        solución &lt;- ConstrucciónVorazAleatorizada(tamañoRCL)
+        solución &lt;- BúsquedaLocal(solución)          [pendiente]
+        actualizar media y mejor valor
+    fin
+</code></pre></div>
+<p>Implementado en <code>TOPTWGRASP.GRASP()</code>. De cada iteración se calcula la puntuación
+(<code>evaluateFitness()</code>), se acumula para la media y se conserva el mejor valor. No se guarda la
+mejor solución, sólo su puntuación.</p>
+<h3 id="construccion-voraz-aleatorizada">Construcción voraz aleatorizada<a class="headerlink" href="#construccion-voraz-aleatorizada" title="Permanent link">&para;</a></h3>
+<p><code>TOPTWGRASP.computeGreedySolution()</code> construye una solución completa:</p>
+<ol>
+<li><strong>Inicialización:</strong> <code>initSolution()</code> deja una única ruta vacía (ruta 0). Todos los POIs
+   quedan en la lista de clientes libres.</li>
+<li><strong>Evaluación:</strong> <code>comprehensiveEvaluation()</code> calcula, para cada cliente libre, su mejor
+   posición de inserción factible. Los candidatos se ordenan por <strong>coste ascendente</strong>.</li>
+<li><strong>Lista restringida (RCL):</strong> se toman los <code>maxSizeRCL</code> mejores candidatos (o todos, si hay
+   menos).</li>
+<li><strong>Selección:</strong> se elige un candidato de la RCL según el método configurado.</li>
+<li><strong>Inserción:</strong> <code>updateSolution()</code> enlaza el cliente en la ruta y actualiza los tiempos de
+   salida de los nodos posteriores.</li>
+<li><strong>Reevaluación:</strong> se repite desde el paso 2 con los clientes que quedan.</li>
+<li><strong>Nueva ruta:</strong> si no existe ningún candidato factible, se crea otra ruta con <code>addRoute()</code>
+   mientras queden vehículos. Si no quedan, la construcción termina.</li>
+</ol>
+<p>El <strong>criterio voraz</strong> es el coste temporal de la inserción y la <strong>aleatorización</strong> procede de
+elegir dentro de la RCL, no siempre el primero.</p>
+<h3 id="candidatos">Candidatos<a class="headerlink" href="#candidatos" title="Permanent link">&para;</a></h3>
+<p>Cada candidato es un vector <code>double[5]</code>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Índice</th>
+<th>Contenido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0</td>
+<td>Cliente (POI) a insertar</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td>Índice de la ruta</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>Nodo predecesor tras el cual se inserta</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td>Coste: instante en que termina la ruta tras la inserción</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td>Puntuación del cliente</td>
+</tr>
+</tbody>
+</table>
+<h3 id="comprobacion-de-factibilidad-de-una-insercion">Comprobación de factibilidad de una inserción<a class="headerlink" href="#comprobacion-de-factibilidad-de-una-insercion" title="Permanent link">&para;</a></h3>
+<p>Para insertar un cliente <code>c</code> entre <code>pre</code> y <code>suc</code> se simulan los tiempos de la ruta:</p>
+<div class="highlight"><pre><span></span><code>llegada(c)   = salida(pre) + d(pre, c)         debe cumplir  llegada(c) &lt; cierre(c)
+inicio(c)    = max(llegada(c), apertura(c))    (espera si se llega antes de abrir)
+salida(c)    = inicio(c) + servicio(c)         debe cumplir  salida(c) &lt;= maxTimePerRoute
+</code></pre></div>
+<p>Después se <strong>propaga</strong> el efecto al sucesor y a todos los nodos siguientes de la ruta, hasta el
+depósito, aplicando las mismas reglas:</p>
+<div class="highlight"><pre><span></span><code>llegada(suc) = salida(c) + d(c, suc)           debe cumplir  llegada(suc) &lt; cierre(suc)
+...                                            y así hasta volver al depósito
+</code></pre></div>
+<p>Si en cualquier punto se incumple una condición, la inserción es <strong>no factible</strong> y se descarta.
+Si es factible, su coste es el instante final de la ruta (la salida del depósito de cierre).
+Para cada cliente se conserva la posición factible de menor coste entre todas las rutas.</p>
+<div class="admonition note">
+<p class="admonition-title">Comparación estricta</p>
+</div>
+<p>La condición de cierre de la ventana usa una comparación estricta (<code>&lt;</code>), de modo que llegar
+exactamente en el instante de cierre se considera no factible. El límite <code>maxTimePerRoute</code>
+se comprueba con <code>&gt;</code>, por lo que alcanzarlo exactamente sí es válido.</p>
+<h3 id="metodos-de-seleccion-en-la-rcl">Métodos de selección en la RCL<a class="headerlink" href="#metodos-de-seleccion-en-la-rcl" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Valor de <code>selection</code></th>
+<th>Método</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td><code>aleatorySelectionRCL()</code></td>
+<td>Elección uniforme al azar entre los elementos de la RCL</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td><code>fuzzySelectionBestFDRCL()</code></td>
+<td>Elige el de mayor puntuación (menor grado de pertenencia <code>1 - score / maxScore</code>)</td>
+</tr>
+<tr>
+<td style="text-align: center;">3 <em>(por defecto)</em></td>
+<td><code>fuzzySelectionAlphaCutRCL()</code></td>
+<td>Conserva los candidatos con grado de pertenencia <code>&lt;= alpha</code> y elige uno al azar</td>
+</tr>
+</tbody>
+</table>
+<p>En el método 3, con <code>alpha = 0.8</code> se aceptan los candidatos cuya puntuación es al menos el 20 %
+de la máxima de la instancia. Si ninguno cumple el corte, se elige al azar entre toda la RCL.</p>
+<p>La selección combina así dos criterios: la <strong>RCL</strong> se forma por coste temporal (inserciones
+baratas) y la <strong>selección difusa</strong> prioriza la puntuación.</p>
+<h3 id="parametros">Parámetros<a class="headerlink" href="#parametros" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Valor por defecto</th>
+<th>Dónde se modifica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>maxIterations</code></td>
+<td>10000</td>
+<td>Llamada a <code>GRASP()</code> en <code>mainTOPTW</code></td>
+</tr>
+<tr>
+<td><code>maxSizeRCL</code></td>
+<td>3, 5 y 7 (tres ejecuciones)</td>
+<td>Llamada a <code>GRASP()</code> en <code>mainTOPTW</code></td>
+</tr>
+<tr>
+<td><code>selection</code></td>
+<td>3</td>
+<td>Variable local en <code>computeGreedySolution()</code></td>
+</tr>
+<tr>
+<td><code>alpha</code></td>
+<td>0.8</td>
+<td>Variable local en <code>computeGreedySolution()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="informes-de-solucion">Informes de solución<a class="headerlink" href="#informes-de-solucion" title="Permanent link">&para;</a></h2>
+<p><code>TOPTWSolution.getInfoSolution()</code> recorre cada ruta, recalcula los instantes de llegada y salida
+y valida la solución (ventanas de tiempo y tiempo máximo). Devuelve un texto con:</p>
+<ul>
+<li>Un resumen: rutas, factibilidad, puntuación total y coste temporal total.</li>
+<li>Los datos del problema.</li>
+<li>Una tabla por ruta con coordenadas, ventana de tiempo e instantes de llegada y salida.</li>
+</ul>
+<p><code>TOPTWSolution.printSolution()</code> muestra únicamente las rutas y su puntuación (<code>SC=</code>).</p>
+<h2 id="utilidades">Utilidades<a class="headerlink" href="#utilidades" title="Permanent link">&para;</a></h2>
+<p>Paquete <code>exposito.utilities</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Clase</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ExpositoUtilities</code></td>
+<td>Normalización de cadenas, formateo de tablas por consola, escritura de ficheros, producto de matrices, detección de ciclos en grafos</td>
+</tr>
+<tr>
+<td><code>BellmanFord</code></td>
+<td>Camino mínimo desde el nodo 0 al último nodo con costes enteros (admite negativos)</td>
+</tr>
+<tr>
+<td><code>Pair</code></td>
+<td>Par genérico inmutable con <code>equals()</code> y <code>hashCode()</code></td>
+</tr>
+<tr>
+<td><code>PowerSet</code></td>
+<td>Iterable sobre todos los subconjuntos de un conjunto</td>
+</tr>
+</tbody>
+</table>
+<h2 id="complejidad-y-rendimiento">Complejidad y rendimiento<a class="headerlink" href="#complejidad-y-rendimiento" title="Permanent link">&para;</a></h2>
+<p>El coste dominante es <code>comprehensiveEvaluation()</code>. En cada reevaluación se recorre, para cada
+cliente libre, todas las posiciones de inserción de todas las rutas y, para cada posición, se
+propagan los tiempos hasta el final de la ruta. Esta reevaluación se repite tras cada inserción.</p>
+<ul>
+<li>El coste crece con el número de POIs y con la longitud de las rutas.</li>
+<li>El tiempo total es proporcional al número de iteraciones de GRASP.</li>
+<li>La impresión del informe completo en cada iteración suele ser un coste relevante; para
+  medir tiempos de cómputo conviene desactivarla.</li>
+</ul>
+<h2 id="limitaciones-conocidas-y-trabajo-futuro">Limitaciones conocidas y trabajo futuro<a class="headerlink" href="#limitaciones-conocidas-y-trabajo-futuro" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Ámbito</th>
+<th>Limitación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Algoritmo</td>
+<td>La <strong>búsqueda local</strong> no está implementada: sólo se ejecuta la fase constructiva</td>
+</tr>
+<tr>
+<td>Algoritmo</td>
+<td>No se conserva la mejor solución, sólo su puntuación; tras <code>GRASP()</code> el objeto contiene la última</td>
+</tr>
+<tr>
+<td>Evaluación</td>
+<td><code>TOPTWEvaluator.evaluate()</code> está sin implementar; la puntuación se calcula en <code>TOPTWSolution</code></td>
+</tr>
+<tr>
+<td>Configuración</td>
+<td><code>selection</code> y <code>alpha</code> están fijados en el código</td>
+</tr>
+<tr>
+<td>Entrada</td>
+<td>Un error de lectura finaliza el programa con <code>System.exit(0)</code></td>
+</tr>
+<tr>
+<td>Modelo</td>
+<td><code>setNodes()</code> y <code>addNode()</code> no redimensionan los vectores internos</td>
+</tr>
+<tr>
+<td>Informes</td>
+<td><code>TOPTW.toString()</code> omite el último POI al listar los nodos</td>
+</tr>
+<tr>
+<td>Informes</td>
+<td>En <code>getInfoSolution()</code>, la columna <code>SERVICE TIME</code> muestra el tiempo de servicio del nodo anterior</td>
+</tr>
+<tr>
+<td>Datos</td>
+<td>Sólo se admiten instancias en formato de Solomon; no hay carga de POIs turísticos reales</td>
+</tr>
+</tbody>
+</table>
+<h2 id="convenciones-de-documentacion-del-codigo">Convenciones de documentación del código<a class="headerlink" href="#convenciones-de-documentacion-del-codigo" title="Permanent link">&para;</a></h2>
+<p>Los comentarios del código fuente alimentan la <a href="../referencia-api/">Referencia del código</a>:</p>
+<ul>
+<li>Formato Javadoc (<code>/** ... */</code>) en español. La primera frase de cada comentario se usa como
+  descripción breve (<code>JAVADOC_AUTOBRIEF = YES</code>).</li>
+<li>Se admite <strong>Markdown</strong> dentro de los comentarios (listas, tablas, bloques de código).</li>
+<li>Etiquetas habituales: <code>@param</code>, <code>@return</code>, <code>@throws</code>, <code>@see</code>, <code>@note</code> y <code>@warning</code>.</li>
+<li>Los nombres de <code>@param</code> deben coincidir con los del código para evitar avisos de Doxygen.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>

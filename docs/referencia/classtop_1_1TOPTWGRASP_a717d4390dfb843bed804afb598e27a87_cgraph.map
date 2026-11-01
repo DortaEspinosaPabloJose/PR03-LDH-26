@@ -1,0 +1,13 @@
+<map id="top.TOPTWGRASP.fuzzySelectionAlphaCutRCL" name="top.TOPTWGRASP.fuzzySelectionAlphaCutRCL">
+<area shape="rect" id="Node000001" title="Selección difusa con corte alfa y elección aleatoria." alt="" coords="5,23,227,64"/>
+<area shape="rect" id="Node000002" href="$classtop_1_1TOPTWGRASP.html#a2c07bc597fa781b81a53ad1017e24a4f" title="Selecciona al azar (distribución uniforme) una posición de la RCL." alt="" coords="275,5,538,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,31,262,30,257,32,228,36"/>
+<area shape="rect" id="Node000003" href="$classtop_1_1TOPTWGRASP.html#ae0fad47956718e9e96ee5fb6022d9f5b" title="Obtiene la mayor puntuación entre todos los POIs de la instancia." alt="" coords="299,55,514,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,50,287,57,281,58,227,55"/>
+<area shape="rect" id="Node000004" href="$classtop_1_1TOPTWSolution.html#a4ed9a239d683e7770681aba78e8121a3" title="Devuelve la instancia del problema." alt="" coords="586,29,791,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="514,55,573,53,568,53,514,61"/>
+<area shape="rect" id="Node000005" href="$classtop_1_1TOPTW.html#ad028d42f72214373efca074483462837" title="Devuelve la puntuación de un nodo." alt="" coords="616,79,761,104"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="514,74,604,84,598,84,514,79"/>
+<area shape="rect" id="Node000006" href="$classtop_1_1TOPTW.html#a642e958056dc77c10d72831d633e2f49" title="Indica si un identificador corresponde a una copia del depósito." alt="" coords="839,79,976,104"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="761,89,827,91,821,92,761,94"/>
+</map>

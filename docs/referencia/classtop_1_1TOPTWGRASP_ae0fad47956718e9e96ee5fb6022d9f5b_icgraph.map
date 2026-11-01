@@ -1,0 +1,14 @@
+<map id="top.TOPTWGRASP.getMaxScore" name="top.TOPTWGRASP.getMaxScore">
+<area shape="rect" id="Node000001" title="Obtiene la mayor puntuación entre todos los POIs de la instancia." alt="" coords="981,46,1195,72"/>
+<area shape="rect" id="Node000002" href="$classtop_1_1TOPTWGRASP.html#a717d4390dfb843bed804afb598e27a87" title="Selección difusa con corte alfa y elección aleatoria." alt="" coords="711,5,933,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="962,44,933,42,933,37,968,44"/>
+<area shape="rect" id="Node000006" href="$classtop_1_1TOPTWGRASP.html#aa921b046fab55b437ea10e5cc286c014" title="Selección difusa determinista: elige el candidato con mejor grado de pertenencia." alt="" coords="711,71,933,111"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="968,74,933,80,933,75,962,74"/>
+<area shape="rect" id="Node000003" href="$classtop_1_1TOPTWGRASP.html#ade97c51a7d20660d7d306b756b4a6302" title="Construye una solución voraz aleatorizada completa." alt="" coords="434,39,663,79"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="699,41,664,48,664,42,693,41"/>
+<area shape="rect" id="Node000004" href="$classtop_1_1TOPTWGRASP.html#a11242fc809f6a16ff81136c4785fdc3e" title="Ejecuta el procedimiento GRASP durante un número fijo de iteraciones." alt="" coords="202,46,386,72"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="416,59,387,62,386,56,421,59"/>
+<area shape="rect" id="Node000005" href="$classtop_1_1mainTOPTW.html#a6b155cf80c78f50335adf5a91762e0eb" title=" " alt="" coords="5,46,154,72"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="184,60,154,62,154,56,189,58"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="693,76,664,75,664,70,699,76"/>
+</map>

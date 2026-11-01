@@ -1,0 +1,39 @@
+site_name: RTVRPTW - Documentación Técnica
+site_description: Portal técnico del Recomendador Turístico con Ventanas de Tiempo
+site_author: Equipo de desarrollo
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+nav:
+  - Inicio: index.md
+  - Proyecto:
+      - Introducción: introduccion.md
+      - Arquitectura: arquitectura.md
+      - Instalación: instalacion.md
+  - Manuales:
+      - Manual de usuario: manual-usuario.md
+      - Guía técnica: guia-tecnica.md
+  - Referencia del código: referencia-api.md

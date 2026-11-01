@@ -1,0 +1,11 @@
+<map id="top.TOPTWGRASP.fuzzySelectionBestFDRCL" name="top.TOPTWGRASP.fuzzySelectionBestFDRCL">
+<area shape="rect" id="Node000001" title="Selección difusa determinista: elige el candidato con mejor grado de pertenencia." alt="" coords="5,23,227,64"/>
+<area shape="rect" id="Node000002" href="$classtop_1_1TOPTWGRASP.html#ae0fad47956718e9e96ee5fb6022d9f5b" title="Obtiene la mayor puntuación entre todos los POIs de la instancia." alt="" coords="275,31,489,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,41,262,43,257,44,227,46"/>
+<area shape="rect" id="Node000003" href="$classtop_1_1TOPTWSolution.html#a4ed9a239d683e7770681aba78e8121a3" title="Devuelve la instancia del problema." alt="" coords="537,5,742,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="489,30,519,30,524,29,490,36"/>
+<area shape="rect" id="Node000004" href="$classtop_1_1TOPTW.html#ad028d42f72214373efca074483462837" title="Devuelve la puntuación de un nodo." alt="" coords="568,55,712,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="490,51,555,59,549,59,489,56"/>
+<area shape="rect" id="Node000005" href="$classtop_1_1TOPTW.html#a642e958056dc77c10d72831d633e2f49" title="Indica si un identificador corresponde a una copia del depósito." alt="" coords="790,55,927,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="712,65,778,67,772,68,712,70"/>
+</map>

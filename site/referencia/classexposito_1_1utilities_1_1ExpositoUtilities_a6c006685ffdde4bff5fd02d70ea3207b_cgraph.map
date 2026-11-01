@@ -1,0 +1,10 @@
+<map id="exposito.utilities.ExpositoUtilities.getFormat" name="exposito.utilities.ExpositoUtilities.getFormat">
+<area shape="rect" id="Node000001" title="Formatea una lista de cadenas como una fila de columnas del mismo ancho." alt="" coords="5,39,171,79"/>
+<area shape="rect" id="Node000002" href="$classexposito_1_1utilities_1_1ExpositoUtilities.html#a77be048515954e4d0ebf315840648393" title="Da formato a una cadena si representa un número real." alt="" coords="219,39,384,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,56,206,59,200,59,171,62"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="261,37,259,29,266,20,280,14,301,12,324,14,340,23,334,23,323,20,301,17,281,19,269,24,264,30,266,39"/>
+<area shape="rect" id="Node000003" href="$classexposito_1_1utilities_1_1ExpositoUtilities.html#ab858f9c8a65bf00addf7896cd3a15072" title="Comprueba si una cadena representa un número real." alt="" coords="432,5,597,46"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="384,43,419,41,414,41,385,49"/>
+<area shape="rect" id="Node000004" href="$classexposito_1_1utilities_1_1ExpositoUtilities.html#a67d868ee57b4d04c108d7cc8078790b3" title="Comprueba si una cadena representa un número entero." alt="" coords="432,71,597,111"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="384,69,419,76,414,76,384,74"/>
+</map>

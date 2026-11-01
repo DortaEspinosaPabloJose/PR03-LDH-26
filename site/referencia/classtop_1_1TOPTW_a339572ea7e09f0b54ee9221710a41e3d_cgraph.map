@@ -1,0 +1,10 @@
+<map id="top.TOPTW.toString" name="top.TOPTW.toString">
+<area shape="rect" id="Node000001" title="Genera una representación textual tabulada de la instancia." alt="" coords="5,46,143,72"/>
+<area shape="rect" id="Node000002" href="$classexposito_1_1utilities_1_1ExpositoUtilities.html#a77be048515954e4d0ebf315840648393" title="Da formato a una cadena si representa un número real." alt="" coords="191,39,356,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,56,178,58,172,60,143,62"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="236,37,234,29,240,20,253,14,273,12,295,14,309,23,304,23,294,20,273,17,254,19,243,24,239,30,240,39"/>
+<area shape="rect" id="Node000003" href="$classexposito_1_1utilities_1_1ExpositoUtilities.html#ab858f9c8a65bf00addf7896cd3a15072" title="Comprueba si una cadena representa un número real." alt="" coords="404,5,569,46"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="356,43,391,41,386,41,357,49"/>
+<area shape="rect" id="Node000004" href="$classexposito_1_1utilities_1_1ExpositoUtilities.html#a67d868ee57b4d04c108d7cc8078790b3" title="Comprueba si una cadena representa un número entero." alt="" coords="404,71,569,111"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="356,69,391,76,386,76,356,74"/>
+</map>

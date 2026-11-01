@@ -1,0 +1,5 @@
+<map id="top.TOPTW.getServiceTime" name="top.TOPTW.getServiceTime">
+<area shape="rect" id="Node000001" title="Devuelve el tiempo de servicio (duración de la visita) de un nodo." alt="" coords="5,5,189,31"/>
+<area shape="rect" id="Node000002" href="$classtop_1_1TOPTW.html#a642e958056dc77c10d72831d633e2f49" title="Indica si un identificador corresponde a una copia del depósito." alt="" coords="237,5,373,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,16,224,18,218,18,189,21"/>
+</map>

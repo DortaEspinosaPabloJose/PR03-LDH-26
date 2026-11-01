@@ -1,0 +1,20 @@
+<map id="top.TOPTWSolution.printSolution" name="top.TOPTWSolution.printSolution">
+<area shape="rect" id="Node000001" title="Imprime por consola las rutas de la solución y su puntuación." alt="" coords="5,100,217,125"/>
+<area shape="rect" id="Node000002" href="$classtop_1_1TOPTWSolution.html#a07ec0a724167095ad061040e11136a19" title="Calcula la función objetivo: la puntuación total de los POIs visitados." alt="" coords="265,120,453,161"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,122,252,127,246,128,217,127"/>
+<area shape="rect" id="Node000003" href="$classtop_1_1TOPTWSolution.html#a42484d84c9770ebbb8778fc149abbb58" title="Devuelve el número de rutas creadas hasta el momento." alt="" coords="510,5,712,46"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="179,96,264,80,496,42,492,46,265,86,181,101"/>
+<area shape="rect" id="Node000005" href="$classtop_1_1TOPTWSolution.html#a0c4692927923549f0e137ea74850a8b6" title="Devuelve el depósito de una ruta." alt="" coords="516,71,705,111"/>
+<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="217,105,502,93,500,98,217,110"/>
+<area shape="rect" id="Node000008" href="$classtop_1_1TOPTWSolution.html#a559f4d8cc4b93d998243d7479fd6da8d" title="Devuelve el sucesor de un nodo." alt="" coords="501,185,720,210"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="139,123,197,148,265,170,378,188,488,198,483,198,377,193,264,175,195,153,139,128"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="390,117,441,87,500,57,516,53,521,51,502,61,443,91,393,122"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="453,119,499,113,504,112,454,124"/>
+<area shape="rect" id="Node000006" href="$classtop_1_1TOPTW.html#ad028d42f72214373efca074483462837" title="Devuelve la puntuación de un nodo." alt="" coords="538,136,683,161"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="454,141,525,145,520,146,454,146"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="448,159,502,171,536,181,531,181,500,176,448,164"/>
+<area shape="rect" id="Node000004" href="$classtop_1_1TOPTW.html#abfba541876921de9ec5a63373c056446" title="Devuelve el número de vehículos (rutas) disponibles." alt="" coords="768,13,929,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="712,23,755,25,750,26,713,28"/>
+<area shape="rect" id="Node000007" href="$classtop_1_1TOPTW.html#a642e958056dc77c10d72831d633e2f49" title="Indica si un identificador corresponde a una copia del depósito." alt="" coords="780,136,917,161"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="683,146,767,148,762,148,683,151"/>
+</map>

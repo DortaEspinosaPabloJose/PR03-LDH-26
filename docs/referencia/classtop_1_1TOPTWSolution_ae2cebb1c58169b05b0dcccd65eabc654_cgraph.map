@@ -1,0 +1,12 @@
+<map id="top.TOPTWSolution.initSolution" name="top.TOPTWSolution.initSolution">
+<area shape="rect" id="Node000001" title="Reinicia la solución dejando una única ruta vacía (la ruta 0 con el depósito 0)." alt="" coords="5,52,209,78"/>
+<area shape="rect" id="Node000002" href="$classtop_1_1TOPTW.html#a98907c6bbeba9aba86727ecad5058261" title="Devuelve el número de puntos de interés." alt="" coords="548,28,688,54"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,49,192,29,256,13,322,5,373,3,490,13,549,24,544,25,490,18,373,8,322,10,257,18,194,34,140,54"/>
+<area shape="rect" id="Node000003" href="$classtop_1_1TOPTW.html#abfba541876921de9ec5a63373c056446" title="Devuelve el número de vehículos (rutas) disponibles." alt="" coords="538,78,698,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,76,257,88,396,94,525,95,520,95,396,99,256,93,173,81"/>
+<area shape="rect" id="Node000004" href="$classtop_1_1TOPTWSolution.html#a45192e5d12a12ec58030397041b4a369" title="Crea una solución vacía para un problema." alt="" coords="257,52,490,78"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="209,62,244,65,238,65,209,68"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="490,51,535,49,530,50,491,56"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="491,75,525,81,520,81,490,80"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="332,51,325,44,330,34,346,28,373,26,404,28,420,38,415,38,402,34,373,31,347,33,333,38,330,43,338,53"/>
+</map>

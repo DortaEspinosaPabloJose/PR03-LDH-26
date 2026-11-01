@@ -1,0 +1,5 @@
+<map id="top.TOPTW.getDueTime" name="top.TOPTW.getDueTime">
+<area shape="rect" id="Node000001" title="Devuelve el instante de cierre de la ventana de tiempo de un nodo." alt="" coords="5,5,168,31"/>
+<area shape="rect" id="Node000002" href="$classtop_1_1TOPTW.html#a642e958056dc77c10d72831d633e2f49" title="Indica si un identificador corresponde a una copia del depósito." alt="" coords="216,5,352,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,16,203,18,197,18,168,21"/>
+</map>

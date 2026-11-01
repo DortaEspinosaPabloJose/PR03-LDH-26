@@ -1,0 +1,27 @@
+<map id="top.TOPTWGRASP.updateSolution" name="top.TOPTWGRASP.updateSolution">
+<area shape="rect" id="Node000001" title="Inserta en la solución el candidato elegido y recalcula los tiempos de salida de su ruta." alt="" coords="5,243,230,268"/>
+<area shape="rect" id="Node000002" href="$classtop_1_1TOPTWSolution.html#a822040f322ba94a35ed101f6c53f0b33" title="Devuelve la distancia entre dos nodos según el problema." alt="" coords="289,29,497,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,241,145,205,179,157,223,107,249,85,276,65,291,60,287,63,279,70,252,89,227,111,183,160,150,208,128,243"/>
+<area shape="rect" id="Node000004" href="$classtop_1_1TOPTWSolution.html#a0c4692927923549f0e137ea74850a8b6" title="Devuelve el depósito de una ruta." alt="" coords="299,79,487,120"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="130,240,190,187,232,156,276,129,292,124,288,128,279,134,235,160,194,191,134,244"/>
+<area shape="rect" id="Node000005" href="$classtop_1_1TOPTWSolution.html#a4ed9a239d683e7770681aba78e8121a3" title="Devuelve la instancia del problema." alt="" coords="290,144,496,170"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="141,240,202,209,277,178,303,172,299,175,279,183,204,214,144,244"/>
+<area shape="rect" id="Node000006" href="$classtop_1_1TOPTW.html#a4e74b10708b232a801a4ad147892b70a" title="Devuelve el instante de apertura de la ventana de tiempo de un nodo." alt="" coords="305,193,480,219"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="192,240,304,221,300,224,194,244"/>
+<area shape="rect" id="Node000008" href="$classtop_1_1TOPTW.html#a06b2b40d137f16bdda21c734d3ea8ac7" title="Devuelve el tiempo de servicio (duración de la visita) de un nodo." alt="" coords="301,243,484,268"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="229,253,288,254,283,257,231,258"/>
+<area shape="rect" id="Node000009" href="$classtop_1_1TOPTWSolution.html#a559f4d8cc4b93d998243d7479fd6da8d" title="Devuelve el sucesor de un nodo." alt="" coords="283,292,502,318"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="193,266,305,287,300,290,194,272"/>
+<area shape="rect" id="Node000010" href="$classtop_1_1TOPTWSolution.html#a56640aeccb436bb9dbb33381c274443f" title="Indica si un nodo es el depósito de alguna de las rutas de la solución." alt="" coords="301,341,484,367"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="143,266,204,297,279,328,304,337,298,337,277,333,202,302,143,272"/>
+<area shape="rect" id="Node000011" href="$classtop_1_1TOPTWSolution.html#a77bd60e16c5a4672e71d5f525cbe5e25" title="Establece el predecesor de un nodo." alt="" coords="278,391,508,416"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="132,266,193,321,234,351,279,377,295,386,290,385,276,382,231,356,189,325,131,271"/>
+<area shape="rect" id="Node000012" href="$classtop_1_1TOPTWSolution.html#a2b1fb005fd139112ce576687b1dd7c34" title="Establece el sucesor de un nodo." alt="" coords="283,440,502,466"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="127,266,151,301,185,344,228,389,279,427,290,434,285,433,276,431,225,393,181,348,147,304,126,272"/>
+<area shape="rect" id="Node000003" href="$classtop_1_1TOPTW.html#a137f100c5711b4b93cb5ae1711ddaf9a" title="Calcula la distancia total recorrida por una ruta dada como vector de nodos." alt="" coords="556,29,717,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="497,40,543,41,538,43,498,45"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="596,29,588,21,593,11,610,5,637,3,667,5,683,15,678,15,666,11,637,8,611,10,597,15,594,20,601,29"/>
+<area shape="rect" id="Node000007" href="$classtop_1_1TOPTW.html#a642e958056dc77c10d72831d633e2f49" title="Indica si un identificador corresponde a una copia del depósito." alt="" coords="568,217,705,243"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="481,212,556,221,550,223,481,217"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="484,243,556,238,551,240,486,249"/>
+</map>

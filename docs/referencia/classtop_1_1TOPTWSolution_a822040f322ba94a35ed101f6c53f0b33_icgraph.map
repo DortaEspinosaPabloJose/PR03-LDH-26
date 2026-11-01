@@ -1,0 +1,17 @@
+<map id="top.TOPTWSolution.getDistance" name="top.TOPTWSolution.getDistance">
+<area shape="rect" id="Node000001" title="Devuelve la distancia entre dos nodos según el problema." alt="" coords="986,70,1194,96"/>
+<area shape="rect" id="Node000002" href="$classtop_1_1TOPTWGRASP.html#ae706fe2d8478acf0a026bb40e8fc9df7" title="Evalúa, para cada cliente libre, su mejor posición de inserción factible." alt="" coords="711,5,938,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1009,66,922,49,922,44,1015,66"/>
+<area shape="rect" id="Node000006" href="$classtop_1_1TOPTWSolution.html#a82688039e6f671f6d2f57a1888fe3c21" title="Genera un informe textual detallado de la solución." alt="" coords="459,113,638,154"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1005,99,938,111,780,125,639,133,639,128,779,120,937,106,1000,99"/>
+<area shape="rect" id="Node000007" href="$classtop_1_1TOPTWGRASP.html#adaccdd26e4ad89ffb3e86c780dcd90d7" title="Inserta en la solución el candidato elegido y recalcula los tiempos de salida de su ruta." alt="" coords="712,70,937,96"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="967,83,937,86,937,80,972,83"/>
+<area shape="rect" id="Node000003" href="$classtop_1_1TOPTWGRASP.html#ade97c51a7d20660d7d306b756b4a6302" title="Construye una solución voraz aleatorizada completa." alt="" coords="434,48,663,89"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="693,46,664,53,663,48,698,45"/>
+<area shape="rect" id="Node000004" href="$classtop_1_1TOPTWGRASP.html#a11242fc809f6a16ff81136c4785fdc3e" title="Ejecuta el procedimiento GRASP durante un número fijo de iteraciones." alt="" coords="202,89,386,114"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="416,86,387,92,386,87,421,85"/>
+<area shape="rect" id="Node000005" href="$classtop_1_1mainTOPTW.html#a6b155cf80c78f50335adf5a91762e0eb" title=" " alt="" coords="5,89,154,114"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="184,102,154,104,154,99,189,101"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="441,121,386,116,386,111,446,120"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="694,76,664,77,664,72,700,76"/>
+</map>

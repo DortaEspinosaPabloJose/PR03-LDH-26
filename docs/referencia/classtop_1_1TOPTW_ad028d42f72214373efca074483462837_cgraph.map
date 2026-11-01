@@ -1,0 +1,5 @@
+<map id="top.TOPTW.getScore" name="top.TOPTW.getScore">
+<area shape="rect" id="Node000001" title="Devuelve la puntuación de un nodo." alt="" coords="5,5,150,31"/>
+<area shape="rect" id="Node000002" href="$classtop_1_1TOPTW.html#a642e958056dc77c10d72831d633e2f49" title="Indica si un identificador corresponde a una copia del depósito." alt="" coords="198,5,334,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,16,185,18,180,18,150,21"/>
+</map>

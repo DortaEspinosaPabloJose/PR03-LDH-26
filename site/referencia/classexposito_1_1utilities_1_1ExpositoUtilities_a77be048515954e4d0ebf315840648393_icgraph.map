@@ -1,0 +1,24 @@
+<map id="exposito.utilities.ExpositoUtilities.getFormat" name="exposito.utilities.ExpositoUtilities.getFormat">
+<area shape="rect" id="Node000001" title="Da formato a una cadena si representa un número real." alt="" coords="661,235,827,275"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="778,219,767,216,744,213,723,215,710,220,706,226,707,235,703,233,700,225,707,216,722,210,744,208,768,210,784,219"/>
+<area shape="rect" id="Node000002" href="$classexposito_1_1utilities_1_1ExpositoUtilities.html#a6c006685ffdde4bff5fd02d70ea3207b" title="Formatea una lista de cadenas como una fila de columnas del mismo ancho." alt="" coords="441,5,606,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="725,219,707,184,682,141,650,98,612,61,594,49,594,44,615,57,654,95,686,138,712,182,730,221"/>
+<area shape="rect" id="Node000003" href="$classexposito_1_1utilities_1_1ExpositoUtilities.html#a21a535f35a1f11c6d91dc1c71c26f142" title="Ajusta una cadena a un ancho fijo, alineada a la derecha." alt="" coords="441,71,606,111"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="715,222,670,174,642,149,612,127,590,115,590,109,615,122,645,145,674,171,720,223"/>
+<area shape="rect" id="Node000004" href="$classexposito_1_1utilities_1_1ExpositoUtilities.html#a94715558994f57c2c95ec3823a314cb3" title="Formatea un vector de cadenas como una fila con columnas de ancho DEFAULT_COLUMN_WIDTH." alt="" coords="441,136,606,177"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="688,227,612,192,583,180,583,175,614,187,694,227"/>
+<area shape="rect" id="Node000005" href="$classexposito_1_1utilities_1_1ExpositoUtilities.html#a311dd91c13c29aca891c74c3f1702091" title="Formatea un vector de cadenas como una fila de columnas del mismo ancho, alineadas a la derecha." alt="" coords="441,201,606,242"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="643,241,607,237,607,232,648,240"/>
+<area shape="rect" id="Node000006" href="$classexposito_1_1utilities_1_1ExpositoUtilities.html#acb5dcafe20005e655918f639e3eda2bc" title="Formatea un vector de cadenas como una fila con un ancho distinto por columna, alineadas a la derecha..." alt="" coords="441,267,606,307"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="643,270,607,278,606,272,648,269"/>
+<area shape="rect" id="Node000007" href="$classexposito_1_1utilities_1_1ExpositoUtilities.html#aa22b4fb2911cf62e8bc1a6199eaca20c" title="Formatea un vector de cadenas como una fila con ancho y alineación configurables por columna." alt="" coords="441,332,606,373"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="692,282,614,321,584,334,582,329,612,317,687,284"/>
+<area shape="rect" id="Node000008" href="$classtop_1_1TOPTWSolution.html#a82688039e6f671f6d2f57a1888fe3c21" title="Genera un informe textual detallado de la solución." alt="" coords="434,397,613,438"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="719,286,673,339,645,364,615,387,591,399,589,394,612,382,642,360,670,335,715,289"/>
+<area shape="rect" id="Node000011" href="$classtop_1_1TOPTW.html#a339572ea7e09f0b54ee9221710a41e3d" title="Genera una representación textual tabulada de la instancia." alt="" coords="455,462,592,488"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="731,288,713,329,687,372,655,415,615,452,592,464,591,459,612,448,651,411,683,369,708,326,727,291"/>
+<area shape="rect" id="Node000009" href="$classtop_1_1TOPTWGRASP.html#a11242fc809f6a16ff81136c4785fdc3e" title="Ejecuta el procedimiento GRASP durante un número fijo de iteraciones." alt="" coords="202,405,386,430"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="416,418,387,420,386,415,421,417"/>
+<area shape="rect" id="Node000010" href="$classtop_1_1mainTOPTW.html#a6b155cf80c78f50335adf5a91762e0eb" title=" " alt="" coords="5,405,154,430"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="184,418,154,420,153,415,189,417"/>
+</map>

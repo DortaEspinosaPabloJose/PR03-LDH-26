@@ -1,0 +1,6 @@
+<map id="top.TOPTWSolution.getDistance" name="top.TOPTWSolution.getDistance">
+<area shape="rect" id="Node000001" title="Devuelve la distancia entre dos nodos según el problema." alt="" coords="5,29,214,55"/>
+<area shape="rect" id="Node000002" href="$classtop_1_1TOPTW.html#a137f100c5711b4b93cb5ae1711ddaf9a" title="Calcula la distancia total recorrida por una ruta dada como vector de nodos." alt="" coords="262,29,423,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,40,249,42,243,42,214,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="303,28,296,21,301,11,316,5,342,3,371,5,387,15,381,14,369,11,342,8,318,10,304,15,301,20,308,30"/>
+</map>
