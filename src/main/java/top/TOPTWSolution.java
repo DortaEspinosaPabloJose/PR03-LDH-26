@@ -92,6 +92,28 @@ public class TOPTWSolution {
     }
 
     /**
+     * Crea una copia en profundidad de la solución.
+     *
+     * Duplica todos los vectores de enlaces, tiempos de espera, posiciones y rutas, de modo que
+     * la copia es independiente del original (por ejemplo, para conservar la mejor solución
+     * mientras el GRASP sobrescribe la solución de trabajo). La instancia del problema se
+     * comparte, ya que es de sólo lectura durante la búsqueda.
+     *
+     * @return nueva solución con el mismo contenido que esta.
+     */
+    public TOPTWSolution copy() {
+        TOPTWSolution clone = new TOPTWSolution(this.problem);
+        clone.predecessors = this.predecessors.clone();
+        clone.successors = this.successors.clone();
+        clone.waitingTime = this.waitingTime.clone();
+        clone.positionInRoute = this.positionInRoute.clone();
+        clone.routes = this.routes.clone();
+        clone.availableVehicles = this.availableVehicles;
+        clone.objectiveFunctionValue = this.objectiveFunctionValue;
+        return clone;
+    }
+
+    /**
      * Indica si un nodo es el depósito de alguna de las rutas de la solución.
      *
      * @param c identificador de nodo.

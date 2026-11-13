@@ -51,6 +51,8 @@ public class TOPTWGRASP {
     private int solutionTime;
     /** Generador de números aleatorios usado en las selecciones de la RCL. */
     private Random randomFactor = new Random();
+    /** Copia de la mejor solución encontrada en la última ejecución de `GRASP()` (`null` si no se ha ejecutado). */
+    private TOPTWSolution bestSolutionFound = null;
 
     /**
      * Crea un GRASP asociado a una solución (y, por tanto, a un problema TOPTW).
@@ -90,11 +92,12 @@ public class TOPTWGRASP {
      *
      * En cada iteración construye una solución con `computeGreedySolution()`, la evalúa con
      * `TOPTWSolution.evaluateFitness()` y acumula la media y el mejor valor de la función
-     * objetivo (suma de scores). El bloque de **búsqueda local** está aún por implementar.
+     * objetivo (suma de scores). Además conserva una copia de la mejor solución
+     * (`getBestSolutionFound()`) y al final imprime sus rutas. El bloque de **búsqueda local**
+     * está aún por implementar.
      *
      * **Efectos por consola:** imprime el informe detallado de cada solución
      * (`TOPTWSolution.getInfoSolution()`), y al final la media y el mejor valor obtenidos.
-     * No se conserva la mejor solución, sólo su valor.
      *
      * @param maxIterations número de construcciones (iteraciones) a realizar; debe ser mayor que 0.
      * @param maxSizeRCL    tamaño máximo de la lista restringida de candidatos (RCL).
@@ -103,18 +106,21 @@ public class TOPTWGRASP {
     public void GRASP(int maxIterations, int maxSizeRCL) {
         double averageFitness = 0.0;
         double bestSolution = 0.0;
+        this.bestSolutionFound = null;
         for(int i = 0; i < maxIterations; i++) {
 
             this.computeGreedySolution(maxSizeRCL);
 
             // IMPRIMIR SOLUCION
             double fitness = this.solution.evaluateFitness();
+            this.solution.setObjectiveFunctionValue(fitness);
             System.out.println(this.solution.getInfoSolution());
             //System.out.println("Press Any Key To Continue...");
             //new java.util.Scanner(System.in).nextLine();
             averageFitness += fitness;
-            if(bestSolution < fitness) {
+            if(this.bestSolutionFound == null || bestSolution < fitness) {
                 bestSolution = fitness;
+                this.bestSolutionFound = this.solution.copy();
             }
             //double fitness = this.solution.printSolution();
 
@@ -127,6 +133,32 @@ public class TOPTWGRASP {
         averageFitness = averageFitness/maxIterations;
         System.out.println(" --> MEDIA: "+averageFitness);
         System.out.println(" --> MEJOR SOLUCION: "+bestSolution);
+        this.printBestSolution();
+    }
+
+    /**
+     * Imprime por consola las rutas de la mejor solución hallada por la última ejecución de `GRASP()`.
+     *
+     * Cada ruta se muestra como `0 - 5 - 2 - 0`, seguida de su puntuación total (`SC=`).
+     * Si todavía no se ha ejecutado `GRASP()`, no imprime nada.
+     *
+     * @see #getBestSolutionFound()
+     */
+    public void printBestSolution() {
+        if(this.bestSolutionFound == null) {
+            return;
+        }
+        System.out.println(" --> RUTAS DE LA MEJOR SOLUCION:");
+        this.bestSolutionFound.printSolution();
+    }
+
+    /**
+     * Devuelve la mejor solución encontrada en la última ejecución de `GRASP()`.
+     *
+     * @return copia independiente de la mejor solución, o `null` si `GRASP()` no se ha ejecutado.
+     */
+    public TOPTWSolution getBestSolutionFound() {
+        return this.bestSolutionFound;
     }
 
     /**
