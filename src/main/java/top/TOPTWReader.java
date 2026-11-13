@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.UncheckedIOException;
 
 import exposito.utilities.ExpositoUtilities;
 
@@ -41,55 +42,39 @@ public class TOPTWReader {
      * Tras cargar los nodos calcula la matriz de distancias y fija el tiempo máximo por ruta
      * igual al cierre de la ventana de tiempo del depósito.
      *
-     * @note Ante un error de entrada/salida muestra el error por la salida de error estándar y
-     *       **finaliza el programa** (`System.exit(0)`).
+     * @note Ante un error de entrada/salida lanza una `UncheckedIOException` con la causa original,
+     *       de modo que el código llamante decide cómo reaccionar (no finaliza el programa).
      *
      * @param filePath ruta del fichero de la instancia (por ejemplo `resources/c101.txt`).
      * @return instancia del problema lista para usar.
+     * @throws UncheckedIOException si el fichero no existe o no puede leerse.
      */
     public static TOPTW readProblem(String filePath) {
-        TOPTW problem = null;
-        BufferedReader reader = null;
-        try {
-            File instaceFile = new File(filePath);
-            reader = new BufferedReader(new FileReader(instaceFile));
-            String line = reader.readLine();
-            line = ExpositoUtilities.simplifyString(line);
-            String[] parts =line.split(" ");
+        TOPTW problem;
+        File instanceFile = new File(filePath);
+        try (BufferedReader reader = new BufferedReader(new FileReader(instanceFile))) {
+            String line = ExpositoUtilities.simplifyString(reader.readLine());
+            String[] parts = line.split(" ");
             problem = new TOPTW(Integer.parseInt(parts[2]), Integer.parseInt(parts[1]));
-            line = reader.readLine();
-            line = null; parts = null;
-            for (int i = 0; i < problem.getPOIs()+1; i++) {
-                line = reader.readLine();
-                line = ExpositoUtilities.simplifyString(line);
+            reader.readLine(); // se descarta la segunda línea
+            for (int i = 0; i < problem.getPOIs() + 1; i++) {
+                line = ExpositoUtilities.simplifyString(reader.readLine());
                 parts = line.split(" ");
                 problem.setX(i, Double.parseDouble(parts[1]));
                 problem.setY(i, Double.parseDouble(parts[2]));
                 problem.setServiceTime(i, Double.parseDouble(parts[3]));
                 problem.setScore(i, Double.parseDouble(parts[4]));
-                if(i==0) {
+                if (i == 0) {
                     problem.setReadyTime(i, Double.parseDouble(parts[7]));
                     problem.setDueTime(i, Double.parseDouble(parts[8]));
-                }
-                else {
+                } else {
                     problem.setReadyTime(i, Double.parseDouble(parts[8]));
                     problem.setDueTime(i, Double.parseDouble(parts[9]));
                 }
-                line = null; parts = null;
             }
             problem.calculateDistanceMatrix();
         } catch (IOException e) {
-            System.err.println(e);
-            System.exit(0);
-        } finally {
-            if (reader != null) {
-                try {
-                    reader.close();
-                } catch (IOException ex) {
-                    System.err.println(ex);
-                    System.exit(0);
-                }
-            }
+            throw new UncheckedIOException("No se pudo leer la instancia: " + filePath, e);
         }
         problem.setMaxTimePerRoute(problem.getDueTime(0));
         return problem;
